@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+			<!-- 
+   				데이터 전송방식
+   				(1) get 방식 : 데이터 조회 사용
+   				요청 데이터를 url에 포함해서 전송하는 방식
+				*QueryString 방식으로 데이터를 전송한다
+ 				: http://localhost:8090/GetPost/Login[?name값=value값&name값2=value값]
+				- post 방식에 비해서 보안에 취약하다.
+				- 데이터의 길이에 제한이 있다. (브라우저마다 상이함)
+				- 서로 다른 사용자간에 url을 통해서, 데이터를 공유 할 수 있다.
+				ex) 뉴스링크 > 다른 사람에게 보내주면 > 동일한 화면 보 수 있음!
+   				(2) post 방식 : 데이터 생성 사용
+   					- 요청 데이터를 Request Body Packet 영역에 포함해서 전송하는 방식
+   					- 데이터 길이에 제한이 없다
+   					- get 방식에 비해서 보안에 강하다.
+    		-->
+			
+			
+	<!-- 데이터 전송박식 지정하고 싶을때
+		:  form 태그 method attribute 사용하면 된다!
+	 -->
+	<form action="Login" method= "post">
+		ID : <input type = "text" name = "id">
+		<br>	
+		PW : <input type = "text" name = "pw">
+		<br>
+		<input type ="submit" value = "Login">
+	
+	
+	</form>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+</body>
+</html>

@@ -1,0 +1,32 @@
+package com.smhrd.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.smhrd.frontcontroller.Command;
+import com.smhrd.model.MemberDAO;
+import com.smhrd.model.MemberVO;
+
+public class CheckEamilService implements Command {
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) {
+
+		// 1. 요청 데이터 꺼내오기
+		String email = request.getParameter("email");
+		// 2. DAO 생성하기
+		MemberDAO dao = new MemberDAO();
+		// 3. dao.check() 사용하기
+	    // SELECT EAMIL, TEL, ADDRESS
+	    // FROM WEB_MEMBER WHERE EMAIL=?
+		MemberVO mvo = dao.check(email);
+		
+		// 4. 결과값을 json 구조로 만들어서, 반환해주기
+
+		
+		
+		
+		return null;
+	}
+
+}

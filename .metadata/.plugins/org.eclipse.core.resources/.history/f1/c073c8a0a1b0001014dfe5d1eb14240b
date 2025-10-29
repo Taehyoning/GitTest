@@ -1,0 +1,29 @@
+package com.smhrd.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.smhrd.frontcontroller.Command;
+
+public class UpdateService implements Command {
+
+    @Override
+    public String execute(HttpServletRequest request, HttpServletResponse response) {
+
+        // 1️⃣ 폼에서 전달된 데이터(pw, tel, address) 수집
+
+        // 2️⃣ 세션에서 로그인한 회원 정보 가져오기 (email 꺼내기)
+
+        // 3️⃣ 새 비밀번호, 전화번호, 주소, 이메일을 DTO에 저장
+
+        // 4️⃣ DAO 객체 생성 후 updateMember(dto) 실행
+
+        // 5️⃣ 반환값(cnt)으로 수정 성공 여부 확인 (if문)
+
+        // 6️⃣ 성공 시 세션 정보 갱신 (result에 새로운 dto 저장)
+
+        // 7️⃣ 이동할 페이지 지정 (ex: "update.jsp" or "update_success.jsp")
+
+        return "";
+    }
+}

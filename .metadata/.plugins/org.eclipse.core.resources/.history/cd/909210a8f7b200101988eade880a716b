@@ -1,0 +1,27 @@
+package com.smhrd.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.smhrd.frontcontroller.Command;
+
+public class CheckEamilService implements Command {
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) {
+
+		// 1. 요청 데이터 꺼내오기
+
+		// 2. DAO 생성하기
+
+		// 3. dao.check() 사용하기
+
+		// 4. 결과값을 json 구조로 만들어서, 반환해주기
+		
+		
+		
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.smhrd.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.smhrd.frontcontroller.Command;
+
+public class FetchTest implements Command {
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) {
+
+		
+		// 비동기 통신으로 받아온 데이터를 확인
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		return null;
+	}
+
+}

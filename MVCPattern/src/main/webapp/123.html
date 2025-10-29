@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>회원관리 UR 다이어그램</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true });</script>
+</head>
+<body>
+<div class="mermaid">
+graph TD
+A[일반 사용자] --> B[회원가입]
+A --> C[로그인]
+A --> D[아이디 찾기]
+A --> E[비밀번호 찾기]
+
+
+C --> F[학습하기]
+C --> G[테스트]
+C --> H[랭킹보기]
+C --> I[마이페이지]
+
+
+I --> J[회원정보 수정]
+J --> K[회원탈퇴]
+
+
+style A fill:#fce4ec,stroke:#ad1457,stroke-width:2px
+style B fill:#bbdefb,stroke:#1565c0
+style C fill:#bbdefb,stroke:#1565c0
+style D fill:#c8e6c9,stroke:#2e7d32
+style E fill:#c8e6c9,stroke:#2e7d32
+style F fill:#fff9c4,stroke:#fbc02d
+style G fill:#fff9c4,stroke:#fbc02d
+style H fill:#fff9c4,stroke:#fbc02d
+style I fill:#d1c4e9,stroke:#512da8
+style J fill:#d1c4e9,stroke:#512da8
+style K fill:#ffcdd2,stroke:#c62828
+</div>
+</body>
+</html>

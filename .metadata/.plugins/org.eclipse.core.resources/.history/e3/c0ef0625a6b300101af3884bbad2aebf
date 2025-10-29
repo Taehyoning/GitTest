@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<input type = "text" id = "data">
+	<button id = "btn">요청하기</button>
+	<script type="text/javascript">
+	
+	
+		// 1.필요한 태그 꺼내오기
+		let data =document.getElementById("data");
+		let btn =document.getElementById("btn");
+		// 2. 클릭 했을 때 , 이벤트 처리하기
+		btn.onclick = ()=>{
+			// 3. fetch통신 사용하여 , fastapi 서버로 요청값 보내주기 
+			let url = "http://127.0.0.1:8000/"
+			fetch(url + `?data=${data.value}`)
+				.then((res)=>{
+					return res.json();
+				})
+				.then((result)=>{
+					console.log(result);
+				})
+				.catch((err)=>{
+					console.log(err);
+				})
+			
+		})
+	</script>
+
+</body>
+</html>

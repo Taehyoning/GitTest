@@ -1,0 +1,38 @@
+package com.smhrd.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.smhrd.frontcontroller.Command;
+
+public class FetchTest implements Command {
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) {
+
+		
+		
+		// 비동기 통신으로 받아온 데이터를 확인
+		// Cross Origin Resource Sharing 정책
+		// -> 웹 브라우저내에 있는 정책
+		// 동일출처정책 : 리소스에 접근 을 하기 위해서는 , 동일출여야만 한다.
+		
+		//http://localhost:5500/Ex06FetchTest.html
+		
+		//http://localhost:8090/ExMessageSystem/FetchTest.do
+		
+		// 1. 동일추처정책에 대해서, 어떤 url이 들어오더라도 접근을 허용 
+		response.setHeader("Access-Control-Allow-Origin", "*" );
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		return null;
+	}
+
+}
